@@ -79,7 +79,7 @@ void Tree::Add(int key) {
         root = new Node(key);
     } else {
         Node *node = root;
-        while (node) {
+        while (true) {
             if (key < node->Key) {
                 if (node->Left) {
                     node = node->Left;
